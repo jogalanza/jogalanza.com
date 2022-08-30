@@ -1,10 +1,21 @@
 <template>
   <router-view id="q-app" />
 </template>
-<script>
-import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'App'
-})
+<script>
+import { ref } from 'vue'
+
+export default {
+  name: 'LayoutDefault',
+
+  components: {
+
+  },
+
+  setup () {
+    return {
+      leftDrawerOpen: ref(false)
+    }
+  }
+}
 </script>

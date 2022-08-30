@@ -2,18 +2,18 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('@/layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/AboutMe.vue') }
+      { path: '', component: () => import('@/views/AboutMe.vue') }
     ]
   },
 
   // Always leave this as last one,
   // but you can also remove it
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/Error404.vue')
-  }
+  // {
+  //   path: '/:catchAll(.*)*',
+  //   component: () => import('pages/Error404.vue')
+  // }
 ]
 
 export default routes
